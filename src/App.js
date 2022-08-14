@@ -33,7 +33,9 @@ function App() {
         <h4>{ title[0] } <span onClick={ ()=>{likechange(like+1) }}>like</span> 
         { like } </h4>
         <span onClick={()=>{
+
           let copy = [...title];
+          // ...을 통해서 array풀었다가 다시 넣어서.. 새로운 ref data
           copy[0]='Jacket';
           b(copy);
         }}>change</span>
